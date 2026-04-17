@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khushi Khan | Portfolio</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Background blobs -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
 
 <header>
   <h2>Khushi Khan</h2>
@@ -24,68 +27,65 @@
 </header>
 
 <!-- HERO -->
-<section id="home">
-  <h1>Hello, I'm <span>Khushi Khan</span></h1>
-  <h3 id="typing"></h3>
-  <button onclick="scrollToSection('projects')">View Projects</button>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Khushi Khan</span></h1>
+    <h3 id="typing"></h3>
+    <p>Student at Manav Rachna | Developer | Leader</p>
+    <button onclick="scrollToSection('projects')">Explore Work</button>
+  </div>
+
+  <div class="hero-img">
+    <div class="circle"></div>
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="fade">
   <h2>About Me</h2>
   <p>
-    I am a student at Manav Rachna International Institute of Research and Studies.
-    I am passionate about coding, problem solving, and leadership.
-    I enjoy building real-world projects and working with data visualization tools like Tableau.
+    I am a passionate student at Manav Rachna with strong interest in programming,
+    leadership, and real-world problem solving. I enjoy creating projects that combine
+    technology and practical impact.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="fade">
   <h2>Skills</h2>
 
-  <div class="skill">
-    <p>C</p>
-    <div class="bar"><div style="width:80%"></div></div>
+  <div class="skills-grid">
+    <div class="skill-box">C</div>
+    <div class="skill-box">C++</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Tableau</div>
+    <div class="skill-box">Leadership</div>
   </div>
-
-  <div class="skill">
-    <p>C++</p>
-    <div class="bar"><div style="width:75%"></div></div>
-  </div>
-
-  <div class="skill">
-    <p>JavaScript</p>
-    <div class="bar"><div style="width:70%"></div></div>
-  </div>
-
-  <div class="skill">
-    <p>Tableau</p>
-    <div class="bar"><div style="width:65%"></div></div>
-  </div>
-
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="fade">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Air Quality Detector</h3>
-    <p>IoT-based project using sensors to detect pollution levels.</p>
-  </div>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Air Quality Detector</h3>
+      <p>IoT project using sensors to monitor pollution levels.</p>
+    </div>
 
-  <div class="card">
-    <h3>STP Model</h3>
-    <p>Sewerage treatment plant model for environmental study.</p>
+    <div class="project-card">
+      <h3>STP Model</h3>
+      <p>Sewerage treatment system for environmental study.</p>
+    </div>
   </div>
-
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: khushi@example.com</p>
+<section id="contact" class="fade">
+  <h2>Contact Me</h2>
+  <p>Email:</p>
+  <a href="mailto:khankhushi8826@gmail.com">khankhushi8826@gmail.com</a>
+  <br><br>
   <button onclick="showMessage()">Say Hello</button>
 </section>
 

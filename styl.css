@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* BLOBS BACKGROUND */
+.blob {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.blob1 {
+  background: cyan;
+  top: -100px;
+  left: -100px;
+}
+
+.blob2 {
+  background: purple;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: cyan;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero-text h1 span {
+  color: cyan;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  background: cyan;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Circle visual */
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(cyan, purple);
+  box-shadow: 0 0 50px cyan;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  padding: 15px 25px;
+  margin: 10px;
+  background: #1e293b;
+  border-radius: 20px;
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 15px;
+  width: 250px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+#contact a {
+  color: cyan;
+  text-decoration: none;
+}
+
+/* Fade animation */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
